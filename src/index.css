@@ -1,13 +1,197 @@
 body {
+  background-image: linear-gradient(to bottom, #f83600 0%, #f99923 100%);
+
+  color: rgb(255, 255, 255);
+  background-attachment: fixed;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 2.5rem;
+  font-family: "Dela Gothic One", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Pablo";
+  src: url(./fonts/PABLO.woff2) format("woff2");
+  src: url(./fonts/PABLO.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Pablo Body";
+  src: url(./fonts/helvetica_lt_bold.woff2) format("woff2");
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.header {
+  position: relative;
+  margin: 0;
+}
+
+.kanyeQuoteContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.border {
+  background-color: rgb(255, 255, 255);
+  align-items: baseline;
+  margin: 0 auto;
+  text-align: center;
+  width: 224px;
+  height: 1px;
+}
+
+h1 {
+  color: #000;
+  font-size: 10rem;
+  font-family: "Pablo";
+  margin: 0;
+  text-align: center;
+  letter-spacing: 4.5rem;
+}
+
+span {
+  color: #fff;
+  display: block;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.kanyeGraphicContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.kanyeQuoteContainer {
+  margin-bottom: 2rem;
+}
+
+.quoteBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 15px;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.kanyeQuote {
+  color: rgb(0, 0, 0);
+  font-family: "Pablo Body";
+  font-size: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.kanyeGraphic {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  width: 8%;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #000;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 14rem;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.likeButtonContainer {
+  position: relative;
+}
+
+.likedText {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.unLikedText {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  margin-top: 1rem;
 }
