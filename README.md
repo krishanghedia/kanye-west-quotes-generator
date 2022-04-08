@@ -5,3 +5,4 @@ Quote generator based on Kanye's most infamous quotes and statements from his Tw
 ## Technology used
 
 HTML, CSS and JS
+API - Kanye.Rest
