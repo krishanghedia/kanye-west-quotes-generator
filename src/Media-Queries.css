@@ -1,0 +1,53 @@
+@media screen and (max-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 8rem;
+    letter-spacing: 3rem;
+  }
+
+  .kanyeGraphicContainer {
+    margin-bottom: 2rem;
+  }
+
+  .kanyeGraphic {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 7rem;
+    letter-spacing: 1rem;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .buttonContainer {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+
+  .kanyeQuote {
+    font-size: 1.6rem;
+  }
+
+  .kanyeGraphic {
+    width: 20%;
+  }
+}

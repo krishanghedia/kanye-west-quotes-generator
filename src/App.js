@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Quote from "./Components/Quote";
 import Grapic from "./Components/Graphic";
 import GenerateQuoteButton from "./Components/GenerateQuoteButton";
+import "./App.css";
+import "./Media-Queries.css";
 
 const App = () => {
   const URL = "https://api.kanye.rest"; // API url
